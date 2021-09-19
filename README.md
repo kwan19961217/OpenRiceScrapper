@@ -16,6 +16,7 @@ Usage 2: python3 OpenRiceScrapper.py {page} {food_category}
 Usage 3: python3 OpenRiceScrapper.py {page} {food_category} {district}
 
 
+
 {page} is the number of pages you try to send a a request to OpenRice, each page consists of 15 records.
 
 {food_category} and {district} are optional parameters.
@@ -35,17 +36,20 @@ ors.getName()
 ```
 return 150 restaurants names 
 
+
 ```
 ors = OpenRiceScrapper(5)
 ors.getAddress()
 ```
 return 75 address of the restaurants
 
+
 ```
 ors = OpenRiceScrapper(3, 1005)
 ors.getNameAndAddress()
 ```
 return 45 names and address of the restaurants which dishId is 1005
+
 
 ```
 ors = OpenRiceScrapper(1)
