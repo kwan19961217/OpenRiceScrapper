@@ -17,6 +17,7 @@ Usage 3: python3 OpenRiceScrapper.py {page} {food_category} {district}
 
 
 
+
 {page} is the number of pages you try to send a a request to OpenRice, each page consists of 15 records.
 
 {food_category} and {district} are optional parameters.
