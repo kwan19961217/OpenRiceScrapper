@@ -10,8 +10,11 @@ Usage
 -----
 
 Usage 1: python3 OpenRiceScrapper {page}
+
 Usage 2: python3 OpenRiceScrapper {page} {food_category}
+
 Usage 3: python3 OpenRiceScrapper {page} {food_category} {district}
+
 
 food_category and district are optional parameters.
 
