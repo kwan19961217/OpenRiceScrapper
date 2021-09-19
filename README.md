@@ -16,34 +16,41 @@ Usage 2: python3 OpenRiceScrapper.py {page} {food_category}
 Usage 3: python3 OpenRiceScrapper.py {page} {food_category} {district}
 
 
-food_category and district are optional parameters.
+{page} is the number of pages you try to send a a request to OpenRice, each page consists of 15 records.
 
-For food_category, you may type a dishId or any string you want.
+{food_category} and {district} are optional parameters.
 
-For district, you may type a districtId or any string you want.
+For {food_category}, you may type a dishId or any string you want.
+
+For {district}, you may type a districtId or any string you want.
 
 You can find out the dishId and districtId in the url of OpenRice website when you are searching for a specific item.
 
 
 Method
 ------
-getName
+```
+ors = OpenRiceScrapper(10)
+ors.getName()
+```
+return 150 restaurants names 
 
-return the names of the restaurants
+```
+ors = OpenRiceScrapper(5)
+ors.getAddress()
+```
+return 75 address of the restaurants
 
+```
+ors = OpenRiceScrapper(3, 1005)
+ors.getNameAndAddress()
+```
+return 45 names and address of the restaurants which dishId is 1005
 
-getAddress
-
-return the address of the restaurants
-
-
-getNameAndAddress
-
-return the names and address of the restaurants
-
-
-outputCSV
-
+```
+ors = OpenRiceScrapper(1)
+ors.outputCSV()
+```
 generate a CSV file with the requested names and address
 
 
